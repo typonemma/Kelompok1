@@ -7,7 +7,7 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
-\usepackage{fancyhdr}
+\usepackage{fancyhdr}	
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
 		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
@@ -84,7 +84,7 @@
 	
 	\section{Kajian Terkait}
 	\subsection{Pola Arsitektur MVP}
-	MVP adalah pola arsitektur dalam pembuatan software untuk berbagai platform, seperti desktop, website, dan mobile. Bahasa pemrograman seperti Java, C#, Swift, dan C++ dapat digunakan dalam membuat pola arsitektur MVP \cite{mfd2023}. MVP merupakan evolusi dari pola arsitektur \textit{Model-View-Controller} (MVC), yang lebih dahulu dikenal dan masih banyak digunakan pada saat ini \cite{Kom2022, Dan2020}. 
+	MVP adalah pola arsitektur dalam pembuatan software untuk berbagai platform, seperti desktop, website, dan mobile. Bahasa pemrograman seperti Java, C\#, Swift, dan C++ dapat digunakan dalam membuat pola arsitektur MVP \cite{mfd2023}. MVP merupakan evolusi dari pola arsitektur \textit{Model-View-Controller} (MVC), yang lebih dahulu dikenal dan masih banyak digunakan pada saat ini \cite{Kom2022, Dan2020}. 
 	
 	Pola arsitektur MVP terdiri dari tiga komponen utama, yaitu \textit{Model, View} dan \textit{Presenter}.
 	\textit{Model} menggambarkan komponen yang menangani data dan logika bisnis dalam sebuah aplikasi, serupa dengan fungsi model dalam MVC. Komponen ini bertugas mengolah, menyimpan, dan mengatur data, serta mengimplementasikan segala aturan bisnis yang diperlukan. Dalam struktur ini, model beroperasi secara independen dan tidak berinteraksi langsung dengan \textit{view} atau \textit{presenter}.
@@ -128,6 +128,8 @@
 	
 	\subsection{Studi Literatur}
 	Penelitian "\textit{Performance Comparison of Native Android Application on MVP and MVVM}" \cite{Wis2020} membandingkan performa antara pola arsitektur MVP dan MVVM dalam aplikasi Android. Performa diukur dari tiga aspek, yaitu penggunaan CPU, penggunaan memori, dan waktu eksekusi. Eksperimen dilakukan dengan menjalankan MVP dan MVVM pada perangkat Android. Setiap pengujian dimonitor menggunakan "Snapdragon Profiler" dan hasil tersebut akan dieksport menjadi CSV. Pengujian dilakukan berdasarkan dua skenario, yaitu uji kasus dan volume data. Setiap skenario dilakukan sebanyak 5 kali dan hasil dari pengujian tersebut akan dirata-ratakan. Berdasarkan pengujian yang dilakukan, penggunaan CPU pada MVVM lebih rendah dengan perbedaan rata-rata 0,55\%, waktu eksekusi MVVM lebih cepat dengan perbedaan rata-rata 126,21 ms, dan penggunaan memori pada MVP lebih rendan dengan perbedaan rata-rata sebesar 0,92 Mb. Dari eksperimen tersebut, dapat disimpulkan bahwa MVVM memiliki performa yang lebih baik dalam penggunaan CPU dan waktu eksekusi, sedangkan MVP memiliki performa yang lebih baik dalam penggunaan memori.
+	
+	\textbf{\textcolor{red}{Kalau bisa dibuat table perbandingannya}}
  
 	Penelitian "Analisis Perbandingan Implementasi Clean Architecture Menggunakan Design Pattern MVP, MVI, Dan MVVM Pada Pengembangan Aplikasi Android Native" \cite{Fir2024} melakukan perbandingan modifiabilitas, testabilitas, dan performa berdasarkan skenario tertentu. Berdasarkan aspek yang telah diuji, MVI unggul dalam hal testabilitas, MVVM dalam hal modifiabilitas, dan MVP dalam hal performa.
  
@@ -135,6 +137,8 @@
  
     Penelitian "\textit{REVIEW OF IOS ARCHITECTURAL PATTERN FOR
     TESTABILITY, MODIFIABILITY, AND PERFORMANCE QUALITY}" \cite{fz2019} memperkenalkan pentingnya pemilihan pola arsitektur yang tepat untuk pengembangan aplikasi iOS. Pengujian pola arsitektur berdasarkan kualitas uji (\textit{testability}), kemampuan untuk dimodifikasi (\textit{modifiability}), dan performa aplikasi yang optimal. Pengujian kualitas uji berdasarkan tiga parameter yaitu uji global (\textit{globat test effort}), kemampuan pengendalian (\textit{controllability}), dan kemampuan observasi (\textit{observability}). Hasil dari pengujian ini adalah MVVM memiliki baris kode yang lebih sedikit daripada pola arsitektur lainnya karena \textit{data binding} di \textit{ViewModel}. Waktu pengujian paling cepat juga dimiliki oleh MVVM dengan kecepatan 19.6 detik dibanding MVP 20.9 detik. Pada kemampuan untuk dimodifikasi, MVVM memiliki kemampuan kohesi terbaik degan 0,55 \textit{procedural} dibanding MVP yaitu 0,3809 dan merupakan terendah diantara empat pola arsitektur (MVP, MVC, MVVM, dan VIPER). Pada uji performa, dua pengujian dilakukan yaitu penggunaan memori dan CPU. MVVM menggunakan memori paling sedikit yaitu 21,19275 Mb dibanding MVP yaitu 22,9645 Mb. Sedangkan dalam penggunaan CPU, MVVM menggunakan CPU kedua paling banyak yaitu 11,615\%. Berdasarkan pengujian yang telah dilakukan, MVVM dan VIPER merupakan dua pola arsitektur terbaik.
+    
+    \textbf{\textcolor{red}{Tambahkan table perbandingannya}}
 	
 	\section{Metodologi}
 
